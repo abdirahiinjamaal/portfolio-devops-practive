@@ -22,6 +22,8 @@ resource "aws_s3_bucket_public_access_block" "content" {
 resource "aws_s3_bucket_policy" "content" {
   bucket = aws_s3_bucket.content.id
   policy = data.aws_iam_policy_document.content.json
+
+  depends_on = [aws_s3_bucket_public_access_block.content]
 }
 
 data "aws_iam_policy_document" "content" {
