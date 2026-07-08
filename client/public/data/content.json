@@ -1,0 +1,117 @@
+{
+  "hero": {
+    "name": "Abdirahiim jamal abdullahi",
+    "tagline": "Cloud & DevOps Engineer",
+    "subtitle": "Building scalable infrastructure and full-stack applications with modern cloud-native technologies.",
+    "cta": [
+      { "text": "View Projects", "link": "/projects" },
+      { "text": "Contact Me", "link": "/contact" }
+    ]
+  },
+  "about": {
+    "bio": "I'm a passionate Cloud & DevOps engineer with hands-on experience in AWS, containerization, CI/CD pipelines, and infrastructure-as-code. I love building things that are reliable, scalable, and well-architected. This portfolio itself is a living example — deployed across multiple AWS strategies (ECS, EKS, Serverless) with full Terraform IaC and GitHub Actions CI/CD.",
+    "photo": ""
+  },
+  "skills": [
+    { "id": "s1", "name": "AWS", "category": "Cloud", "proficiency": 85 },
+    { "id": "s2", "name": "Terraform", "category": "IaC", "proficiency": 80 },
+    { "id": "s3", "name": "Docker", "category": "Containers", "proficiency": 85 },
+    { "id": "s4", "name": "Kubernetes", "category": "Orchestration", "proficiency": 70 },
+    { "id": "s5", "name": "Linux", "category": "Systems", "proficiency": 80 },
+    { "id": "s6", "name": "GitHub Actions", "category": "CI/CD", "proficiency": 75 },
+    { "id": "s7", "name": "TypeScript", "category": "Languages", "proficiency": 80 },
+    { "id": "s8", "name": "React", "category": "Frontend", "proficiency": 75 },
+    { "id": "s9", "name": "Node.js", "category": "Backend", "proficiency": 75 },
+    { "id": "s10", "name": "PostgreSQL", "category": "Databases", "proficiency": 70 },
+    { "id": "s11", "name": "MongoDB", "category": "Databases", "proficiency": 65 },
+    { "id": "s12", "name": "CloudFront", "category": "Cloud", "proficiency": 70 },
+    { "id": "s13", "name": "ECS Fargate", "category": "Containers", "proficiency": 75 },
+    { "id": "s14", "name": "EKS", "category": "Orchestration", "proficiency": 65 },
+    { "id": "s15", "name": "Lambda", "category": "Serverless", "proficiency": 70 },
+    { "id": "s16", "name": "API Gateway", "category": "Serverless", "proficiency": 65 }
+  ],
+  "experience": [
+    {
+      "id": "e1",
+      "company": "Tech Company",
+      "role": "Cloud Engineer",
+      "startDate": "2024-01",
+      "endDate": null,
+      "description": "Designing and implementing AWS infrastructure using Terraform. Managing EKS clusters, CI/CD pipelines, and monitoring solutions.",
+      "tech": ["AWS", "Terraform", "Kubernetes", "GitHub Actions"]
+    },
+    {
+      "id": "e2",
+      "company": "Startup Inc.",
+      "role": "DevOps Intern",
+      "startDate": "2023-06",
+      "endDate": "2023-12",
+      "description": "Assisted in migrating on-premise services to AWS. Dockerized microservices and set up ECS Fargate with CI/CD pipelines.",
+      "tech": ["Docker", "ECS", "AWS", "CI/CD"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Cloud Portfolio",
+      "description": "A full-stack portfolio deployed across ECS Fargate, EKS, and Serverless architectures. Infrastructure managed entirely with Terraform with automated CI/CD via GitHub Actions.",
+      "image": "https://placehold.co/600x400/1e293b/ffffff?text=Cloud+Portfolio",
+      "tech": ["React", "TypeScript", "Express", "Terraform", "AWS", "Docker"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "order": 1
+    },
+    {
+      "id": "p2",
+      "title": "Kubernetes Cluster Setup",
+      "description": "Production-grade EKS cluster with node groups, IAM policies, ingress controllers, and monitoring stack (Prometheus + Grafana).",
+      "image": "https://placehold.co/600x400/1e293b/ffffff?text=EKS+Cluster",
+      "tech": ["EKS", "Terraform", "Helm", "Prometheus", "Grafana"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "order": 2
+    },
+    {
+      "id": "p3",
+      "title": "Serverless API",
+      "description": "Fully serverless REST API using Lambda, API Gateway, and DynamoDB with Infrastructure-as-Code in Terraform.",
+      "image": "https://placehold.co/600x400/1e293b/ffffff?text=Serverless+API",
+      "tech": ["AWS Lambda", "API Gateway", "DynamoDB", "Terraform"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "order": 3
+    }
+  ],
+  "blog": [
+    {
+      "id": "b1",
+      "title": "Deploying a React App on AWS ECS Fargate",
+      "slug": "deploy-react-ecs-fargate",
+      "excerpt": "A step-by-step guide to containerizing and deploying a React application on AWS ECS Fargate with Terraform.",
+      "content": "In this post, I'll walk through the process of deploying a React application on AWS ECS Fargate using Terraform for infrastructure management...\n\n## Prerequisites\n- An AWS account\n- Docker installed\n- Terraform installed\n\n## Step 1: Containerize the App\nFirst, create a multi-stage Dockerfile for your React app...\n\n## Step 2: Write Terraform Config\nDefine your ECS cluster, task definition, and service...\n\n## Step 3: Deploy\nRun terraform apply and watch your app come to life!",
+      "publishedAt": "2025-06-15",
+      "coverImage": "",
+      "tags": ["AWS", "ECS", "Terraform", "Docker"]
+    },
+    {
+      "id": "b2",
+      "title": "Understanding Terraform State Management",
+      "slug": "terraform-state-management",
+      "excerpt": "Best practices for managing Terraform state files including remote backends, state locking, and team workflows.",
+      "content": "Terraform state is the backbone of your infrastructure management. Here's what you need to know...\n\n## Remote Backends\nUsing S3 as a backend with DynamoDB for state locking...\n\n## State File Structure\nUnderstanding how Terraform maps resources to state...\n\n## Team Workflows\nManaging state in a team environment...",
+      "publishedAt": "2025-05-20",
+      "coverImage": "",
+      "tags": ["Terraform", "IaC", "DevOps"]
+    },
+    {
+      "id": "b3",
+      "title": "Setting Up GitHub Actions for Multi-Environment Deployments",
+      "slug": "github-actions-multi-env",
+      "excerpt": "How to configure GitHub Actions workflows for deploying to development, staging, and production environments.",
+      "content": "GitHub Actions makes CI/CD straightforward. Here's how to set up multi-environment deployments...\n\n## Workflow Structure\nDefine separate jobs for build, test, and deploy...\n\n## Environment Secrets\nUsing GitHub Environments for secure variable management...\n\n## Approval Gates\nAdding manual approval steps for production deployments...",
+      "publishedAt": "2025-04-10",
+      "coverImage": "",
+      "tags": ["CI/CD", "GitHub Actions", "DevOps"]
+    }
+  ]
+}
