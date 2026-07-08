@@ -2,8 +2,8 @@ output "s3_content_bucket" {
   value = module.s3_content.bucket_name
 }
 
-output "cloudfront_domain" {
-  value = module.s3_content.cloudfront_domain
+output "s3_content_url" {
+  value = module.s3_content.bucket_url
 }
 
 output "alb_dns" {
