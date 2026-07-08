@@ -152,7 +152,6 @@ resource "aws_ecs_task_definition" "app" {
       }
       environment = [
         { name = "PORT", value = "3001" },
-        { name = "MONGODB_URI", value = var.mongodb_uri },
         { name = "CORS_ORIGIN", value = "http://${aws_lb.main.dns_name}" }
       ]
     }
